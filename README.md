@@ -10,5 +10,5 @@ The multi-functional sales website that allows users to perform a variety of act
 ### Video review: [Link](https://www.youtube.com/watch?v=TY4BTjLH-0w&ab_channel=HoneyCode)
 # Steps to perform the project Boutique Shop
 1. First, ```git clone https://github.com/NgXuanBach/Boutique-shop-fe.git``` or click download ```ZIP```.
-2. Then, getting front-end source code [Link-be](https://github.com/NgXuanBach/Boutique-shop)
+2. Then, getting back-end source code [Link-be](https://github.com/NgXuanBach/Boutique-shop)
 3. Then, open `Boutique-shop` project with any `IDE` to run.
