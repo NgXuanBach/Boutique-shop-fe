@@ -2,6 +2,32 @@
 let bearerToken = "Bearer " + localStorage.getItem("token");
 var cartTotal = ('small#totalQuantity');
 $(document).ready(function () {
+    $('.chat-toggle-btn').click(function () {
+        $('#chat-box').toggle();
+    });
+
+    $('.close-btn').click(function () {
+        $('#chat-box').hide();
+    });
+
+    $('#send-btn').click(function () {
+        sendMessage();
+    });
+
+    $('#chat-input').keypress(function (e) {
+        if (e.which === 13) { // Enter key pressed
+            sendMessage();
+        }
+    });
+
+    function sendMessage() {
+        const message = $('#chat-input').val().trim();
+        if (message) {
+            $('#chat-messages').append('<div>' + message + '</div>');
+            $('#chat-input').val('');
+            $('#chat-messages').scrollTop($('#chat-messages')[0].scrollHeight);
+        }
+    }
     var userId;
     //  function getUserId() {
     $.ajax({
