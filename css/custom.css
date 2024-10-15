@@ -1,18 +1,20 @@
 .chat-box {
     width: 300px;
-    height: 400px;
-    border: 1px solid #ccc;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #fff;
     display: none;
-    flex-direction: column;
+    z-index: 1000;
 }
 
 .chat-header {
     background-color: #343a40;
     color: #fff;
+    border-radius: 17px 17px 0 0;
     padding: 10px;
     text-align: center;
     position: relative;
@@ -21,17 +23,17 @@
 .chat-header .close-btn {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 0px;
     background: none;
     border: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
 }
 
 .chat-messages {
-    flex: 1;
-    padding: 10px;
+    height: 302px;
+    margin: 10px 5px;
     overflow-y: auto;
 }
 
@@ -44,12 +46,13 @@
     flex: 1;
     padding: 10px;
     border: none;
-    border-right: 1px solid #ccc;
+    border-radius: 0 0 0 17px;
 }
 
 .chat-input button {
     padding: 10px;
     background-color: #007bff;
+    border-radius: 0 0 17px 0;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -66,4 +69,5 @@
     border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
+    z-index: 1000;
 }
